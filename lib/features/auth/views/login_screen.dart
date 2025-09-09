@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/core/theme/app_text_style.dart';
 import 'package:ecommerce_app/core/widgets/custom_text_field.dart';
 import 'package:ecommerce_app/features/auth/controllers/auth_controller.dart';
+import 'package:ecommerce_app/features/auth/views/forgot_password_screen.dart';
 import 'package:ecommerce_app/features/auth/views/register_screen.dart';
 import 'package:ecommerce_app/features/home/views/home_screen.dart';
 import 'package:flutter/material.dart';
@@ -79,7 +80,7 @@ class LoginScreen extends StatelessWidget {
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
-                  onPressed: () {},
+                  onPressed: () => Get.to(() => ForgotPasswordScreen()),
                   child: Text(
                     "Forgot Password",
                     style: AppTextStyle.withColor(

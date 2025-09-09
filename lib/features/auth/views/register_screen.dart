@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/core/theme/app_text_style.dart';
 import 'package:ecommerce_app/core/widgets/custom_text_field.dart';
 import 'package:ecommerce_app/features/auth/views/login_screen.dart';
-import 'package:ecommerce_app/features/home/views/home_screen.dart';
+import 'package:ecommerce_app/features/home/views/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -112,7 +112,7 @@ class RegisterScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () => Get.off(() => HomeScreen()),
+                  onPressed: () => Get.off(() => MainScreen()),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Theme.of(context).primaryColor,
                     padding: const EdgeInsets.symmetric(vertical: 16),

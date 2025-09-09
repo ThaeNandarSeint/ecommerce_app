@@ -3,7 +3,7 @@ import 'package:ecommerce_app/core/widgets/custom_text_field.dart';
 import 'package:ecommerce_app/features/auth/controllers/auth_controller.dart';
 import 'package:ecommerce_app/features/auth/views/forgot_password_screen.dart';
 import 'package:ecommerce_app/features/auth/views/register_screen.dart';
-import 'package:ecommerce_app/features/home/views/home_screen.dart';
+import 'package:ecommerce_app/features/home/views/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -16,7 +16,7 @@ class LoginScreen extends StatelessWidget {
   void _handleLogin() {
     final AuthController authController = Get.find<AuthController>();
     authController.login();
-    Get.offAll(() => const HomeScreen());
+    Get.offAll(() => const MainScreen());
   }
 
   @override

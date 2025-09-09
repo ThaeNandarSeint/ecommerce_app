@@ -1,7 +1,7 @@
 import 'package:ecommerce_app/features/entry/views/onboarding_screen.dart';
 import 'package:ecommerce_app/features/auth/controllers/auth_controller.dart';
 import 'package:ecommerce_app/features/auth/views/login_screen.dart';
-import 'package:ecommerce_app/features/home/views/home_screen.dart';
+import 'package:ecommerce_app/features/home/views/main_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
       if (authController.isFirstTime) {
         Get.off(() => const OnboardingScreen());
       } else if (authController.isLoggedIn) {
-        Get.off(() => const HomeScreen());
+        Get.off(() => const MainScreen());
       } else {
         Get.off(() => LoginScreen());
       }

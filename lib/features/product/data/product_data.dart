@@ -24,6 +24,7 @@ final List<Product> products = [
     oldPrice: 189.00,
     imageUrl: 'assets/images/shoe2.jpg',
     description: 'This is a description of the product 1',
+    isFavourite: true,
   ),
   Product(
     name: 'Puma',
@@ -32,5 +33,6 @@ final List<Product> products = [
     oldPrice: 189.00,
     imageUrl: 'assets/images/shoe2.jpg',
     description: 'This is a description of the product 1',
+    isFavourite: true,
   ),
 ];

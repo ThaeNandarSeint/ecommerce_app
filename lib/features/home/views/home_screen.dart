@@ -3,6 +3,7 @@ import 'package:ecommerce_app/features/home/widgets/category_chips.dart';
 import 'package:ecommerce_app/features/home/widgets/custom_search_bar.dart';
 import 'package:ecommerce_app/features/home/widgets/product_grid.dart';
 import 'package:ecommerce_app/features/home/widgets/sale_banner.dart';
+import 'package:ecommerce_app/features/product/views/product_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -78,7 +79,7 @@ class HomeScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   GestureDetector(
-                    onTap: () {},
+                    onTap: () => Get.to(() => ProductListScreen()),
                     child: Text(
                       "See All",
                       style: TextStyle(color: Theme.of(context).primaryColor),

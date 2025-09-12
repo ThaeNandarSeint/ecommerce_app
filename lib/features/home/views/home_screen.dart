@@ -4,6 +4,7 @@ import 'package:ecommerce_app/features/home/widgets/category_chips.dart';
 import 'package:ecommerce_app/features/home/widgets/custom_search_bar.dart';
 import 'package:ecommerce_app/features/home/widgets/product_grid.dart';
 import 'package:ecommerce_app/features/home/widgets/sale_banner.dart';
+import 'package:ecommerce_app/features/notification/views/notification_screen.dart';
 import 'package:ecommerce_app/features/product/views/product_list_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -45,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Spacer(),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => NotificationScreen()),
                     icon: const Icon(Icons.notifications_outlined),
                   ),
                   IconButton(

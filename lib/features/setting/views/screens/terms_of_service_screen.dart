@@ -3,8 +3,8 @@ import 'package:ecommerce_app/features/setting/views/widgets/info_section.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class PrivacyPolicyScreen extends StatelessWidget {
-  const PrivacyPolicyScreen({super.key});
+class TermsOfServiceScreen extends StatelessWidget {
+  const TermsOfServiceScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
           ),
         ),
         title: Text(
-          'Privacy Policy',
+          'Terms of Service',
           style: AppTextStyle.withColor(
             AppTextStyle.h3,
             isDark ? Colors.white : Colors.black,
@@ -36,34 +36,34 @@ class PrivacyPolicyScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               InfoSection(
-                title: 'Information We Collect',
+                title: 'Welcome to Fashion Store',
                 content:
-                    'We collect information that you provide directly to us, including name, email, address, and shipping information',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
               InfoSection(
-                title: 'How We Use Your Information',
+                title: 'Account Registration',
                 content:
-                    'We use the information we collect to provide, maintain, and improve our services, process your transactions and send your updates.',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
               InfoSection(
-                title: 'Information Sharing',
+                title: 'User Responsibilities',
                 content:
-                    'We collect information that you provide directly to us, including name, email, address, and shipping information',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
               InfoSection(
-                title: 'Data Security',
+                title: 'Privacy Policy',
                 content:
-                    'We collect information that you provide directly to us, including name, email, address, and shipping information',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
               InfoSection(
-                title: 'Your Rights',
+                title: 'Intellectual Property',
                 content:
-                    'We collect information that you provide directly to us, including name, email, address, and shipping information',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
               InfoSection(
-                title: 'Cookie Policy',
+                title: 'Termination',
                 content:
-                    'We collect information that you provide directly to us, including name, email, address, and shipping information',
+                    'By accessing and using this application, you accept and agree to be bound by the terms and provision of this agreement.',
               ),
               const SizedBox(height: 24),
               Text(

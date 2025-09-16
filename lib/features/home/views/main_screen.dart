@@ -4,7 +4,7 @@ import 'package:ecommerce_app/features/home/views/home_screen.dart';
 import 'package:ecommerce_app/features/home/widgets/custom_bottom_navbar.dart';
 import 'package:ecommerce_app/features/product/views/shopping_screen.dart';
 import 'package:ecommerce_app/features/product/views/wishlist_screen.dart';
-import 'package:ecommerce_app/features/user/views/account_screen.dart';
+import 'package:ecommerce_app/features/user/views/screens/account_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

@@ -1,10 +1,11 @@
 import 'package:ecommerce_app/core/theme/app_text_style.dart';
 import 'package:ecommerce_app/features/auth/controllers/auth_controller.dart';
 import 'package:ecommerce_app/features/auth/views/login_screen.dart';
+import 'package:ecommerce_app/features/help_center/views/screens/help_center_screen.dart';
 import 'package:ecommerce_app/features/order/views/screens/my_orders_screen.dart';
 import 'package:ecommerce_app/features/shipping_address/views/screens/shipping_address_screen.dart';
 import 'package:ecommerce_app/features/user/views/screens/edit_profile_screen.dart';
-import 'package:ecommerce_app/features/user/views/screens/setting_screen.dart';
+import 'package:ecommerce_app/features/setting/views/screens/setting_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -155,7 +156,9 @@ class AccountScreen extends StatelessWidget {
                   Get.to(() => MyOrdersScreen());
                 } else if (item['title'] == 'Shipping Address') {
                   Get.to(() => ShippingAddressScreen());
-                } else if (item['title'] == 'Help Center') {}
+                } else if (item['title'] == 'Help Center') {
+                  Get.to(() => HelpCenterScreen());
+                }
               },
             ),
           );

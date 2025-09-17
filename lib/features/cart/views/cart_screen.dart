@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/core/theme/app_text_style.dart';
+import 'package:ecommerce_app/features/cart/views/check_out_screen.dart';
 import 'package:ecommerce_app/features/product/data/product_data.dart';
 import 'package:ecommerce_app/features/product/models/product.dart';
 import 'package:flutter/material.dart';
@@ -47,7 +48,7 @@ class CartScreen extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () => Get.to(() => CheckOutScreen()),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Theme.of(context).primaryColor,
                 padding: const EdgeInsets.symmetric(vertical: 16),
